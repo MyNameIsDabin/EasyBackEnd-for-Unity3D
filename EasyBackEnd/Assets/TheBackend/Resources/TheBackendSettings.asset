@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 660911240, guid: 77d6e49b5e6e74c909970a208a23105c, type: 3}
+  m_Name: TheBackendSettings
+  m_EditorClassIdentifier: 
+  clientAppID: 6d7a99d0-33c4-11eb-a943-8758993360691724
+  signatureKey: 6d7a99d1-33c4-11eb-a943-8758993360691724
+  functionAuthKey: 
+  packageName: com.DefaultCompany.EasyBackEnd
+  isAllPlatform: 1
+  sendLogReport: 1
+  Version: 5.1.0

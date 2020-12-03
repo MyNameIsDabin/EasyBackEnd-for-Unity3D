@@ -31,6 +31,6 @@ public class ItemData
     private int num;
 }
 ```
-- 반드시 뒤끝 차트의 칼럼 명과 클래스 멤버 변수의 이름이 정확히 일치해야 합니다.
+- 반드시 뒤끝에 업로드된 차트의 칼럼 명과 클래스 멤버 변수의 이름이 정확히 일치해야 합니다.
 - 클래스 상단에 [Serializable] 가 반드시 필요합니다.
 - 클래스 멤버 변수는 반드시 [SerializeField] 로 선언하거나 혹은 public 으로 선언해야 합니다.

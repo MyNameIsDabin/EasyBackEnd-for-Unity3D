@@ -17,7 +17,6 @@ Debug.Log(item.hpPower);
 
 차트 매니저를 이용해서 클래스에 데이터를 담기 위해 다음 규칙을 지켜야 합니다.
 ```
-/*
 [Serializable]
 public class ItemData
 {

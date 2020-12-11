@@ -10,12 +10,12 @@ using UnityEngine;
 [Serializable]
 public class ItemData
 {
-    public int itemId;
+    public string itemId;
 
     public string itemName;
 
-    public double hpPower;
-
     [SerializeField]
-    private int num;
+    private double hpPower;
+
+    public int num;
 }

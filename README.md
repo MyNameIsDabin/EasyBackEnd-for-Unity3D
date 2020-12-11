@@ -30,7 +30,7 @@ Debug.Log(item1.itemName);
 ItemData item2 = ChartManager.Instance.GetDataByKey<ItemData>("num", 3);
 Debug.Log(item2.itemName);
 ```
-딕셔너리로 데이터를 로드하기 때문에 처리 속도는 O(n) 이기 때문에 값에 접근할때마다 탐색하지 않습니다.
+딕셔너리로 데이터를 저장해놓기 때문에 처리 속도는 O(n)으로 성능 걱정이 없습니다.
 
 ### 주의! 클래스 설계
 차트 매니저를 이용해서 클래스에 데이터를 담기 위해 다음 규칙을 지켜야 합니다.

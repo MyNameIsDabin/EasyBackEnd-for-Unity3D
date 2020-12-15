@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1912be7-944c-4255-8ae3-ddff702927be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ChartData/FoodData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ChartData/FoodData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EasyBackEnd/ChartManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EasyBackEnd/ChartManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TheBackend/Resources/TheBackendSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheBackend/Resources/TheBackendSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EasyBackEnd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EasyBackEnd/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608031475460</updated>
       <workItem from="1608031489052" duration="80000" />
-      <workItem from="1608031636386" duration="4381000" />
+      <workItem from="1608031636386" duration="4706000" />
     </task>
     <servers />
   </component>

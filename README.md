@@ -32,6 +32,18 @@ Debug.Log(item2.itemName);
 ```
 딕셔너리로 데이터를 저장해놓기 때문에 처리 속도는 O(n)으로 성능 걱정이 없습니다.
 
+
+### 차트 데이터 여러개 불러오기 (메소드 체이닝)
+```
+ChartManager.Instance.LoadChartDatas<ItemData>(
+    chartName: "items",
+    primaryKeys: new[] {"itemName", "num"} // primaryKey! 등록해놓으면 GetDataByKey 함수로 데이터를 얻을 수 있다
+).LoadChartDatas<FoodData>(
+    chartName: "foods",
+    primaryKeys: new[] {"foodID"}
+);
+```
+
 ### 주의! 클래스 설계
 차트 매니저를 이용해서 클래스에 데이터를 담기 위해 다음 규칙을 지켜야 합니다.
 ```

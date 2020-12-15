@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using LitJson;
 using System.Reflection;
+using JetBrains.Annotations;
 
 /*
  * 차트 매니저는 뒤끝 version2 기준으로 작성되었습니다.
@@ -19,36 +20,44 @@ namespace BackEndExtends
         private Dictionary<string, Dictionary<string, Dictionary<object, object>>> dataByKey = new Dictionary<string, Dictionary<string, Dictionary<object, object>>>();
         private Dictionary<string, IList> db = new Dictionary<string, IList>();
         private Dictionary<Type, string> dbNamesByType = new Dictionary<Type, string>();
-
+        private JsonData chartListJsonData = null;
+        
         public List<T> GetDataList<T>(string dbName = null)
         {
-            dbName = (dbName != null) ? dbName : dbNamesByType[typeof(T)];
+            dbName = dbName ?? dbNamesByType[typeof(T)];
             return db[dbName] as List<T>;
         }
 
         public T GetDataById<T>(int id, string dbName = null)
         {
-            dbName = (dbName != null) ? dbName : dbNamesByType[typeof(T)];
+            dbName = dbName ?? dbNamesByType[typeof(T)];
             return (T)db[dbName][id];
         }
 
         public T GetDataByKey<T>(string primaryKey, object value, string dbName = null)
         {
-            dbName = (dbName != null) ? dbName : dbNamesByType[typeof(T)];
+            dbName = dbName ?? dbNamesByType[typeof(T)];
             return (T)dataByKey[dbName][primaryKey][value];
         }
 
-
-        public void LoadChartDatas<T>(string chartName, params string[] primaryKeys)
+        public ChartManager LoadChartDatas<T>(string chartName = null, params string[] primaryKeys)
         {
-            BackendReturnObject returnChartList = Backend.Chart.GetChartList();
-            if (returnChartList.IsSuccess())
+            BackendReturnObject retChartList = null;
+            bool isSuccessGetChartList = (chartListJsonData != null);
+
+            if (!isSuccessGetChartList)
             {
-                JsonData json = returnChartList.GetReturnValuetoJSON();
+                retChartList = Backend.Chart.GetChartList();
+                isSuccessGetChartList = retChartList.IsSuccess();
+            }
+
+            if (isSuccessGetChartList)
+            {
+                chartListJsonData = chartListJsonData ?? retChartList.GetReturnValuetoJSON();
                 bool foundedChart = false;
-                for (int i = 0; i < json["rows"].Count; i++)
+                for (int i = 0; i < chartListJsonData["rows"].Count; i++)
                 {
-                    JsonData row = json["rows"][i];
+                    JsonData row = chartListJsonData["rows"][i];
                     string name = row["chartName"]["S"].ToString();
 
                     if (name == chartName)
@@ -71,10 +80,8 @@ namespace BackEndExtends
                                     for (int j = 0; j < dataRows.Count; j++)
                                     {
                                         JsonData data = dataRows[j];
-                                        for (int k = 0; k < primaryKeys.Length; k++)
+                                        foreach (var primaryKey in primaryKeys)
                                         {
-                                            string primaryKey = primaryKeys[k];
-
                                             if (!dataByKey[chartName].ContainsKey(primaryKey))
                                                 dataByKey[chartName].Add(primaryKey, new Dictionary<object, object>());
 
@@ -114,11 +121,19 @@ namespace BackEndExtends
             {
                 Debug.LogWarning("차트가 목록을 받아오지 못했습니다");
             }
+
+            return this;
         }
 
         private List<T> JsonToDataList<T>(string jsonString)
         {
             return JsonUtility.FromJson<DataList<T>>("{ \"dataList\": " + jsonString + "}").ToList();
+        }
+
+        public ChartManager ClearChartListCache()
+        {
+            chartListJsonData.Clear();
+            return this;
         }
     }
 }

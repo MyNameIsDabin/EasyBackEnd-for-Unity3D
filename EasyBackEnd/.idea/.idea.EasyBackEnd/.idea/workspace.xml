@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1912be7-944c-4255-8ae3-ddff702927be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ChartData/FoodData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ChartData/FoodData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EasyBackEnd/ChartManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EasyBackEnd/ChartManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheBackend/Resources/TheBackendSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheBackend/Resources/TheBackendSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4480FD1-6338-4504-AB6E-6C7C63327772/2f/90dfb4c1/BackendReturnObject.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/EasyBackEnd/ChartManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChartData/FoodData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lgvIlQdx60tdvHAxL2yq2UgZml" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1912be7-944c-4255-8ae3-ddff702927be" name="Default Changelist" comment="" />
+      <created>1608031475460</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608031475460</updated>
+      <workItem from="1608031489052" duration="80000" />
+      <workItem from="1608031636386" duration="4381000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="286" y="-855" key="RiderGenerateDialog" timestamp="1608033219511">
+      <screen x="-533" y="-1057" width="2560" height="1057" />
+    </state>
+    <state x="286" y="-855" key="RiderGenerateDialog/-533.-1057.2560.1057/0.23.1440.819@-533.-1057.2560.1057" timestamp="1608033219511" />
+    <state x="145" y="-908" key="SettingsEditor" timestamp="1608032104426">
+      <screen x="-533" y="-1057" width="2560" height="1057" />
+    </state>
+    <state x="145" y="-908" key="SettingsEditor/-533.-1057.2560.1057/0.23.1440.819@-533.-1057.2560.1057" timestamp="1608032104426" />
+    <state x="-5" y="-900" width="1372" height="652" key="VCS.FileHistoryDialog" timestamp="1608035667900">
+      <screen x="-533" y="-1057" width="2560" height="1057" />
+    </state>
+    <state x="-5" y="-900" width="1372" height="652" key="VCS.FileHistoryDialog/-533.-1057.2560.1057/0.23.1440.819@-533.-1057.2560.1057" timestamp="1608035667900" />
+    <state x="598" y="-1033" width="1429" height="980" key="dock-window-1" timestamp="1608032043319">
+      <screen x="-533" y="-1057" width="2560" height="1057" />
+    </state>
+    <state x="598" y="-1033" width="1429" height="980" key="dock-window-1/-533.-1057.2560.1057/0.23.1440.819@-533.-1057.2560.1057" timestamp="1608032043319" />
+    <state x="219" y="-810" width="672" height="678" key="search.everywhere.popup" timestamp="1608032493956">
+      <screen x="-533" y="-1057" width="2560" height="1057" />
+    </state>
+    <state x="219" y="-810" width="672" height="678" key="search.everywhere.popup/-533.-1057.2560.1057/0.23.1440.819@-533.-1057.2560.1057" timestamp="1608032493956" />
+  </component>
+</project>
